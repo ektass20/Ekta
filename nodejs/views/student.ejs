@@ -1,0 +1,42 @@
+<%- include("header") %>
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <form class="form-container" method="POST" action="/student">
+        <div class="mb-3">
+          <h1>Add Students</h1>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Enter Name</label>
+          <input type="text" name="name" class="form-control" required/>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Enter Roll No</label>
+          <input type="text" name="roll" class="form-control"/>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Select Branch</label>
+          <select name="branch" class="form-select">
+            <option selected disabled>Select Branch</option>
+            <option>Computer Science</option>
+            <option>Mechanical</option>
+            <option>Civil</option>
+            <option>Maths</option>
+          </select>
+        </div>
+        <div class="text-center">
+          <button class="btn btn-primary">Add Student</button>
+        </div>
+      </form>
+
+      <% if (result) { %>
+        <div class="alert alert-success mt-3">
+          <%= result %>
+        </div>
+      <% } %>
+    </div>
+  </div>
+</div>
+
+<%- include("footer") %>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="/Users/ektas20/html file/hello.css">
+    
+   </head>
+  <body bgcolor="pink">
+    <center>
+    <h1>Student Registration Form</h1> 
+  
+    <form action=" " method="post">
+       <label for="field1" style="color: rgb(104,196,175); background-color: rgb(186,225,255);"> Roll No: <input type="text" placeholder="Enter your roll no" rollno="rollno" id="field1"></label><br><br>
+        
+        <label for="field2"> Student name: <input type="text" placeholder="first name" Student name="studentname" id="field2" required pattern="[A-Za-z]"></label>
+        
+        <label for="field5"> <input type="text" placeholder="last name" last name="lastname" id="field5" required pattern="[A-Za-z]"></label><br><br>
+        
+        <label for="field3"> Father's name: <input type="text" placeholder="Enter your fathers name" style="width: 300px;" fathers name="fathers name" id="field3" required pattern="[A-Za-z]"></label><br><br>
+        
+        <label for="dob">Date of Birth: <input type="date" id="dob" name="dob"></label><br><br>
+        
+        <label for="field4"> Mobile No: <input type="text" placeholder="Enter your mobile no" mobile no="mobile no" id="field4" required pattern="[0-9]"></label><br><br>
+        
+        <label for="field6"> Email: <input type="email" placeholder=".........@gmail.com" 
+        email="email" id="field6"></label><br><br>
+        
+        <label for="field7"> Password: <input type="password" placeholder="Enter capital,small alphabets,no and special character" style="width: 350px;" password="password" id="field7" required pattern="^(?=.*[A-Z])(?=.*[a-z])(/=.*[0-9]){8}$"></label><br><br>
+     
+        <label for="field8"> Gender: <input type="radio" name="gender" id="field8" value="Male">Male<label>
+        
+        <label for="field9"> <input type="radio" name="gender" id="field9" value="Female">Female<label><br><br>
+        
+        <label for="field9"> Department: <input type="radio" name="department" id="field9" value="CSE">CSE</label>  
+             
+        <label for="field10"><input type="radio" name="department" id="field10" value="IT">IT</label> 
+             
+       <label for="field11"><input type="radio" name="department" id="field11" value="Civil">Civil</label> 
+             
+        <label for="field12"><input type="radio" name="department" id="field12" value="Mechanical">Mechanical</label><br><br> 
+             
+        <label for="field13"> City: <input type="text" style="width: 250px; city="city" id="field13"></label><br><br>
+             
+        <label for="field14"> Address: <textarea name="address" id="field14"></textarea></label><br><br>
+             
+        <label for="student-photo">Upload Student Photo: <input type="file" id="student-photo" name="student-photo" accept="image/*"></label><br><br>
+            
+        <label for="student-sign">Upload Student Sign: <input type="file" id="student-sign" name="student-sign" accept="image/*"></label><br><br>
+
+        <input type="submit" value="submit">
+        <input type="reset" value="cancel">
+ 
+     </center>
+    </form>
+
+</body>
+</html>

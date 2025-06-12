@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <Style>
+        .box{
+            height:150px;
+            width:150px;
+            border: 2px solid pink;
+            color: blue;
+        }
+
+        .btn{
+            background-color: brown;
+            height:20px;
+            width:20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Set methods</h1>
+    <ul>
+        <li>html()</li>
+        <li>val()</li>
+        <li>text()</li>
+        <li>atrr()</li>
+    </ul>
+
+    <div class="box" id="text">
+        <h3>netmax</h3>
+        <p>i am learning jquery</p>
+    </div><br>
+    value: <input type="text" id="put"><br><br>
+    <button class="btn">click me</button>
+
+    <script>
+        $(document).ready(function(){
+            $("btn").click(function(){
+
+        $("h3").html("<i>hello students</i>")
+        $("p").html("welcome to jquery classes")
+
+        $("#val").val("name")
+        $("#test").attr("class","first")
+        
+        })
+        })
+    </script>
+</body>
+</html>

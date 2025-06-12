@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+        .error{
+            color:red;
+        }
+        .success{
+            color:green;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 align="center">Form validations</h2>
+    <form id="myForm">
+        Name <input type="text" id="name"><br><br>
+        <div id="nameError" class="error"></div>
+
+        Email <input type="email" id="email"><br><br>
+        <div id="emailError" class="error"></div>
+
+        Password <input type="password" id="pwd"><br><br>
+        <div id="pwdError" class="error"></div> 
+
+        contact <input type="number" id="contact" min="10"><br><br>
+        <div id="contactError" class="error"></div>
+
+        <div id="success" class="success"></div>
+
+        <button type=submit id="formSubmit">Submit</button>
+
+    </form>
+
+    <script>
+        $(document).ready(function(){
+            $("#myForm").submit(function(event){
+                event.preventDefault(); //prevent auto form submitting//
+            
+
+        //clear previous messages//
+            $(".error").text("");
+            $("#success").text("");
+
+
+                let name= $("#name").val().trim();
+                let email=$("#email").val().trim();
+                let pwd=$("#pwd").val()
+                let contact=$("#contact").val().trim();
+
+                isValid=true;
+
+            //name valiation//
+                if(name===""){
+                $("#nameError").text("name is required!!!")
+                isValid=false;
+                }
+
+            //email validation//     
+                const emailPattern=/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i;
+                if(!email.match(emailPattern)){
+                $("#emailError").text("Please enter a valid email!!!")
+                isValid=false;
+                }
+
+            //password validation//
+                if(pwd.length<6){
+                    $("#pwdError").text("Password must be atleast 6 characters")
+                    isValid=false;
+                }
+
+            //contact validation//
+               const contactPattern = /^\d{10}$/;
+                if (!contact.match(contactPattern)) {
+                $("#contactError").text("Contact must be a 10-digit number!");
+                isValid = false;
+        }
+
+                if(isValid){
+                    $("#success").text("form submitted Successfully");
+                    
+                }
+
+            })
+            $("#myForm").trigger('reset');
+        })
+
+    </script>
+    
+</body>
+</html>

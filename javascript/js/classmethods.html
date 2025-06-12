@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Methods</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+    .first{
+        background-color: pink;
+        color:cornflowerblue;
+        border: 2px solid black;
+        height:150px;
+        width:150px;
+    }
+    .second{
+        background-color: skyblue;
+        color:lavender;
+        border: 2px solid yellow;
+        height:150px;
+        width:150px;
+    }
+    </style>
+   </head>
+   <body>
+    <center><h1> Class Methods</h1></center>
+    <div id="test">
+        <h3>Netmax Technologies</h3>
+        <p>we are learning jquery</p>
+    </div><br><br>
+
+    <button id="add">Add class</button>
+    <button id="remove">Remove class</button>
+    <button id="toggle">Toggle class</button><br><br>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+    <button id="toggleehs">Toggle hide/show</button>
+
+
+    <script>
+        $(document).ready(function(){
+        $("add").click(function(){
+        $("#test").addClass("first second")
+        })
+        $("#remove").click(function(){
+        $("#test").removeClass("second")
+        })
+        $("#toggle").click(function(){
+        $("#test").toggleClass(" first second")
+        })
+        
+    })
+
+    </script>
+
+
+    
+</body>
+</html>

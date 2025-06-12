@@ -1,0 +1,9 @@
+.heading{
+    background-color: black;
+    color: white
+}
+para{
+    border:1px solid blue;
+    border-radius:6px;
+    box-shadow: 2px 3px 6px	red;
+}

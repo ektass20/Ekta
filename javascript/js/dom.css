@@ -1,0 +1,23 @@
+/* .dd {
+    background-color: pink;
+    color:black;
+    border: solid 1px white;
+    font-family: cursive;
+    width: 200px;
+    font-weight: bold;
+} */
+
+.pp{
+    color:coral;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.newPp{
+    background-color: cornflowerblue;
+    font-style: underline;
+    font-weight: bold;
+    font-size: 30px;
+}

@@ -1,0 +1,100 @@
+/* body{
+    background-color:darkgrey;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align:center;
+    padding:10px;
+}
+
+.content-container,.full-content-container{
+    background: whitesmoke;
+    max-width: 800px;
+    max-height:800px;
+    margin:auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.short-content{
+    overflow: hidden;
+    color: black;
+    font-size: 20px;
+    padding-top: 40px;
+
+}
+
+.see-more, .go-back{
+    
+    color:black;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.see-more:hover{
+    display: inline-block;
+    text-decoration:none;
+    color:cadetblue;
+}
+
+.go-back:hover{
+    color:cadetblue;
+    text-decoration:none;
+    display:inline-block;
+} */
+
+/* .relative{
+    position:relative;
+    height: 200px;
+    width: 200px;
+     margin: 30px 200px;  
+     /* (30px is for top,bottom, 200px is for left,right) */
+    /* border-style: solid dashed;
+    border-width: 30px 100px;
+    border:4px solid rgb(#282525);
+}
+
+.fixed{
+    position:fixed;
+    height: 80px;
+    width: 100px;
+    top: 300px;
+    right: 50px;
+    bottom: 200px;
+    left: 100px;
+   border-width: 300px 200px;
+   background-color:palevioletred;
+   padding: 20px 20px;
+} */
+
+/* .sticky{
+    backgrou
+} */ 
+
+
+.first{
+    height:800px;
+    width:100%;
+    background-color:green;
+}
+
+.second{
+    height:100px;
+    width:200px;
+    background-color:yellow;
+     animation: colorchange linear 6s 4; 
+}
+
+/* @keyframes example{
+    from { background-color: red; width:200px;height:100px;}
+    to  {background-color: yellowgreen}
+} */
+
+@keyframes colorchange{
+    0%{background-color: pink; transform: rotate(20deg); margin-left:0%;}
+    20%{background-color: coral;transform: rotate(80deg); margin-left:20%;}
+    40%{background-color: blue; transform: rotate(140deg);margin-left:40%;}
+    60%{background-color:aqua; transform: rotate(180deg);margin-left:60%;}
+    80%{background-color:cornflowerblue;transform: rotate(220deg); margin-left:80%;}
+}
+
+

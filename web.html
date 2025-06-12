@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROJECT</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="website.css">
+</head>
+
+<body class="m-0">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+<div class="container-fluid">
+    <img src="mizlala.jpg" alt="logo image" style="height:70px; border-radius: 70%;">
+    
+    <!-- Navbar Toggler for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav text-center ">
+        <li class="nav-item navitems"><a class="nav-link active me-3 text-white" href="#">Home</a></li>
+        <li class="nav-item navitems"><a class="nav-link me-3 text-white" href="mizlalamenu.html">Menu</a></li>
+        
+        <li class="nav-item navitems"><a class="nav-link me-3 text-white" href="mizlalaaboutus.html">About Us</a></li>
+
+        <li class="nav-item navitems"><a class="nav-link me-3 text-white" href="mizlalacontact.html">Contact Us</a></li>
+      </ul>
+      </div>
+    
+
+    <button class="btn btn-sm text-white" style="background-color:grey; margin-right: 10px;;" data-bs-toggle="modal"
+    data-bs-target="#reserveModal">Reserve Us..</button>
+
+    <!--  <a href="mizlalalogin.html"> 
+  <button class="btn btn-sm text-white" style="background-color: grey; margin-right: 20px; border-radius: 5px;">Log In</button>
+  </a>
+
+    <button class="btn btn-sm text-white" style="background-color: grey;" data-bs-toggle="signupmodal" -->
+    <!-- data-bs-target="#reserveModal">Sign Up..</button> --> 
+</div>
+</nav>
+
+<!-- HERO SECTION -->
+<div class="position-relative vh-100 overflow-hidden">
+  <video class="position-absolute top-50 start-50 w-100 h-100 object-fit-cover translate-middle z-0" autoplay muted loop playsinline>
+    <source src="newvideo.mp4" type="video/mp4">
+  </video>
+
+  <div class="container position-relative z-2 text-white d-flex flex-column justify-content-center align-items-center h-100 text-center">
+    <h1 class="display-3 fw-bold fst-italic text-shadow">Welcome to Mizlala</h1>
+    <p class="lead mb-4 fst-italic info">Taste the soul of the Mediterranean</p>
+    <a href="#about" class="btn btn-light btn-lg">Explore More</a>
+  </div>
+</div>
+
+<!-- RESERVATION MODAL -->
+<div class="modal custom-fade-modal" id="reserveModal" tabindex="-1" aria-labelledby="reserveModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="reserveModalLabel">Reserve a Table</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <form id="modalReservationForm">
+          <div class="mb-3">
+            <label for="modalName" class="form-label">Name:</label>
+            <input type="text" class="form-control" id="modalName" placeholder="Enter your name" required>
+          </div>
+          <div class="mb-3">
+            <label for="modalGuests" class="form-label">Number of Guests:</label>
+            <input type="number" class="form-control" id="modalGuests" placeholder="e.g., 2" required>
+          </div>
+          <div class="mb-3">
+            <label for="modalDate" class="form-label">Date:</label>
+            <input type="date" class="form-control" id="modalDate" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="modalphoneno" class="form-label">Phone No.</label>
+            <input type="text" class="form-control" id="modalphoneno" placeholder=" Enter your Number" required>
+          </div>
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" form="modalReservationForm" class="btn btn-primary">Reserve</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- STORY BEHIND / ABOUT -->
+<section id="about" class="container-fluid py-5" style="background-color:whitesmoke; color:black; background-size: cover; background-position: center;">
+  <div class="row align-items-center text-center">
+
+    <!-- Left Image -->
+    <div class=" col-12 col-md-4 mb-2 mb-md-0 mt-2">
+      <img src="img-16.jpg" class="img-fluid rounded cafe" alt="cafe image">
+    </div>
+
+    <!-- Center Text -->
+    <div class=" col-12 col-md-4 p-4 fst-italic">
+      <h1 class="mb-4">Story Behind Mizlala</h1>
+      <p class="info typing-animation">
+        Mizlala is a vibrant, modern Mediterranean restaurant founded by Chef Danny Elmaleh, rooted in his Moroccan-Israeli heritage and a deep love for bold, honest food.<br><br>
+        The name “Mizlala” means “eatery” in Hebrew—simple, casual, and full of soul.<br><br>
+        We opened in Sherman Oaks, where a neighborhood vibe met sizzling skewers and crave-worthy falafel.
+        We’re proud to serve Los Angeles and keep the Mediterranean spirit alive—one delicious plate at a time.
+      </p>
+    </div>
+
+    <!-- Right Image -->
+    <div class=" col-12 col-md-4 mt-4">
+      <img src="images_folder/abcdsasnlsnc.jpg" class="img-fluid rounded chef rotating-image" alt="chef image">
+    </div>
+
+  </div>
+</section>
+
+ <!--NEW IMAGE  -->
+ <div class="image-container">
+  <div class="image-wave-top">
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,100 C150,50 450,150 600,50 S1050,150 1200,50 L1200,0 L0,0 Z" fill="#ffffff"></path>
+    </svg>
+  </div>
+  <img src="WhatsApp Image 2025-06-03 at 15.48.49.jpeg" alt="Coffee background" class="blurred-image">
+  </div>
+
+<!-- our menu section -->
+<section id="menu" class="py-3 bg-light;">
+    <div class="container min-vh-100">
+      <h1 class="text-center mb-5 fw-bold fst-italic mt-4">Explore Our Cuisines</h1>
+      <div class="row g-4">
+        
+        <!-- Cuisine 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card menu h-100 border-0 shadow-sm mt-0 section-to-animate">
+          <a href="mizlalamenu.html">
+            <img src="italian.jpg" class="card-img-top menudish" alt="Italian Cuisine">
+          </a>
+            <div class="card-body text-center">
+              <h4 class="card-title">Italian</h4>
+              <p class="card-text">Classic pastas, wood-fired pizzas, and rich Mediterranean flavors.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Cuisine 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card menu h-100 border-0 shadow-sm mt-5 section-to-animate">
+          <a href="mizlalamenu.html">
+            <img src="images_folder/eastaian.jpg" class="card-img-top menudish" alt="Japanese Cuisine">
+          </a>
+            <div class="card-body text-center">
+              <h4 class="card-title">East Asian</h4>
+              <p class="card-text">Elegant sushi, ramen bowls, tteokbokis and kimbap.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Cuisine 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card menu h-100 border-0 shadow-sm mt-0 section-to-animate">
+          <a href="mizlalamenu.html">
+            <img src="mexican.jpg" class="card-img-top menudish" alt="Mexican Cuisine">
+          </a>
+            <div class="card-body text-center">
+              <h4 class="card-title">Mexican</h4>
+              <p class="card-text">Bold tacos, burritos, and zesty spices from south of the border.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Cuisine 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card menu h-100 border-0 shadow-sm mt-5 section-to-animate">
+          <a href="mizlalamenu.html">
+            <img src="indian cuisine.jpg" class="card-img-top menudish" alt="Indian Cuisine">
+          </a>
+            <div class="card-body text-center">
+              <h4 class="card-title">Indian</h4>
+              <p class="card-text">Spiced curries, naan breads, and aromatic traditional dishes.</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+
+<!--Book a Table Section -->
+
+<div id="bookatable" class="container-fluid py-5 d-flex align-items-center justify-content-center" style="background-color:whitesmoke;">
+  <div class="row g-4 justify-content-center w-100">
+
+    <!-- Booking Form -->
+    <div class="col-lg-5 col-md-5 col-sm-12 fw-bold" style="font-family:'Playfair Display',serif; margin-top: rem;">
+      <div class="p-0">
+        <div class="card-body p-4">
+          <h1 class="card-title text-center mb-4 fw-bold fst-italic">Book a Table</h1>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required style="border:none; border-bottom: 1px solid black; border-radius:0; background:transparent; box-shadow:none; outline:none;">
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Your Phone No." required style="border:none; border-bottom: 1px solid black; border-radius:0; background:transparent; box-shadow:none; outline:none;">
+        </div>
+            
+          
+        <div class="mb-3">
+              <label for="date" class="form-label">Date</label>
+              <input type="date" class="form-control" id="date" required style="border:none; border-bottom: 1px solid black; border-radius:0; background:transparent; box-shadow:none; outline:none;">
+          </div>
+            
+          <div class="mb-3">
+              <label for="guests" class="form-label">Number of Guests </label>
+              <input type="number" class="form-control" id="guests" min="1" max="20" value="2" required style="border:none; border-bottom: 1px solid black; border-radius:0; background:transparent; box-shadow:none; outline:none;">
+          </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-lg" style="background-color:grey;">Book Now</button>
+          </div>
+          </form>
+    </div>
+    </div>
+    </div>
+</div>
+</div>
+
+<!-- Gallery Section -->
+
+<!-- Carousel Section -->
+<section id="pinterest-gallery" class="py-5 bg-light" style="background-color: #121212;">
+  <div class="container">
+    <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-inner">
+        <!-- Slide 1: Our Space -->
+      <div class="carousel-item active">
+          <h1 class="text-center fw-bold mb-4 fst-italic fw-bold">...Our Spaces & Sections...</h1>
+        <div class="row" data-masonry='{"percentPosition": true }'>
+            <div class="col-sm-6 col-lg-4 mb-4 mt-3">
+              <img src="res1.jpg" class="img-fluid rounded shadow-sm pinterest-gallery" alt="Food 1">
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4 mt-2">
+              <img src="res2.jpg" class="img-fluid rounded shadow-sm pinterest-gallery" alt="Food 2">
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4 mt-2">
+              <img src="res3.jpg" class="img-fluid rounded shadow-sm pinterest-gallery" alt="Food 3">
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+              <img src="res4.jpg" class="img-fluid rounded shadow-sm pinterest-gallery" alt="Food 4">
+    </div>
+      <div class="col-sm-6 col-lg-4 mb-4">
+              <img src="res6.jpg" class="img-fluid rounded shadow-sm pinterest-gallery" alt="Food 5">
+      </div>
+    <div class="col-sm-6 col-lg-4 mb-4">
+              <img src="res7.jpg" class="img-fluid rounded shadow-sm pinterest-gallery" alt="Food 6">
+        </div>
+      </div>
+    </div>
+          <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION SECTION -->
+<section class="location" style="margin: 0; padding: 0;">
+  <div class="container text-center">
+    <h1 class="fst-italic mt-5">📍 Our Location</h1>
+    <p>5400 West Adams Blvd, Los Angeles, CA 9600</p>
+    <p><strong>Opening Hours:</strong> Mon–Sun: 11:00 AM – 10:00 PM</p>
+  </div>
+  <div class="map-wrapper">
+    <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d211613.17897091582!2d-118.66562390546875!3d34.032174200000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b96530933e7f%3A0xbbb5a64c955d064c!2sMizlala%20West%20Adams!5e0!3m2!1sen!2sin!4v1743961167807!5m2!1sen!2sin" allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</section>
+
+<!-- Required CDN -->
+
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const grid = document.querySelector('.row[data-masonry]');
+    if (grid) {
+      imagesLoaded(grid, function () {
+        new Masonry(grid, {
+          itemSelector: '.col-sm-6',
+          percentPosition: true
+        });
+      });
+    }
+  });
+</script>
+
+<!-- New Footer Section -->
+
+<footer class="footer-section text-light" style="background-color: #121212;">
+  <div class="container py-5">
+    <div class="row justify-content-between">
+
+      <!-- Brand & About -->
+      <div class="col-md-4 mb-4">
+        <h3 class="footer-brand text-white">Mizlala</h3>
+        <p class="footer-desc text-white">Where flavors meet stories. Join us for an unforgettable culinary experience in the heart of the city.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-2 col-6 mb-4">
+        <h5 class="footer-heading fst">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#menu" class="footer-link text-white">Menu</a></li>
+          <li><a href="#bookatable" class="footer-link text-white">Reservations</a></li>
+          <li><a href="mizlalaaboutus.html" class="footer-link text-white">Our Story</a></li>
+          <li><a href="mizlalacontact.html" class="footer-link text-white">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+
+      <div class="col-md-4 mb-4">
+        <h5>Mizlala – West Adams</h5>
+        <p><i class= "footer-heading fst-italic"fas fa-map-marker-alt me-2></i>5400 W Adams Blvd, Los Angeles, CA 90016</p>
+        <p><i class="fas fa-phone-alt me-2"></i>(323) 433-7137</p>
+        <p><i class="fas fa-clock me-2"></i>11am – 10pm Daily</p>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5 class="footer-heading">Mizlala – Sycamore</h5>
+        <p><i class="fas fa-map-marker-alt me-2"></i>7007 Romaine St Ste 103, Los Angeles, CA 90038</p>
+        <p><i class="fas fa-phone-alt me-2"></i>(323) 347-6292</p>
+        <p><i class="fas fa-clock me-2"></i>11am – 9pm Daily</p>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <p><i class="fas fa-map-marker-alt me-2"></i>4515 Sepulveda Blvd, Sherman Oaks, CA 91403</p>
+        <p><i class="fas fa-phone-alt me-2"></i>(818) 783-6698</p>
+        <p><i class="fas fa-clock me-2"></i>Mon–Sat: 11am–10pm<br>Sun: 11am–9pm</p>
+      </div>
+
+    </div>
+
+
+      <!-- Socials -->
+      <div class="col-md-3 mb-4">
+        <h5 class="footer-heading">Follow Us</h5>
+        <div class="d-flex gap-3">
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="text-center mt-4 pt-3 border-top footer-bottom text-white">
+      &copy; 2025 Mizlala. Crafted with passion 💛
+    </div>
+  </div>
+</footer>
+
+<!-- REQUIRED CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+</html>

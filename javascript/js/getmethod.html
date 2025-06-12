@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <Style>
+        .box{
+            border:2px solid black;
+            height:150px;
+            width:150px;
+        }
+
+        .output{
+            background-color: pink;
+            color:cornflowerblue;
+            font-family:cursive;
+            height:100px;
+            width:200px;
+            border: 3px solid blue;
+        }
+
+    </Style>
+</head>
+<body>
+    <h1>get methods of jQuery</h1>
+    <ul>
+        <li>html()</li>
+        <li>val()</li>
+        <li>text()</li>
+        <li>attribute()</li>
+    </ul>
+
+    <div class="box" id="test">
+        <h3>Netmax Technologies</h3>
+        <p>i am learning jquery</p>
+    </div><br><br>
+
+    value: <input type="text" id="val"><br><br>
+
+    <div class="output" id="html"></div><br>
+    <div class="output" id="text"></div>
+
+    <script>
+        $(document).ready(function(){
+            var showHtml = $("#test").html();
+            $("#html").html(showHtml);//this one will show everything with all designing and links and all//
+
+            var showHtml = $("#test").text();
+            $("#text").html(showHtml); // in this one we will only get text as an output no links or headings just normal text//
+
+            $("#val").blur(function(){
+            var value=$("#val").val();
+            $("#text").html("<h1>" +value +"</h1>");
+        })
+        
+            var atr =$("#test").attr('class');
+            $("#text").html("<h1> " + "class is:" + atr + "</h1>");
+           
+        });
+          //assignment_ read height of a div//
+        </script>
+
+  
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<style>
+.box{
+    height:150px;
+    width:150px;
+    background-color: gray;
+    border:2 px solid black;
+}
+/* #first{
+    height:150px;
+    width:150px;
+    color:black;
+} */
+</style>
+</head>
+<body>
+    <h1> Append and prepend methods</h1>
+
+    <!-- / //node.append: ADD  at the end of the node//
+// div.append(newBtn);
+
+// //node.prepend: to add at the starting of the node.//
+
+// div.prepend(newBtn);
+// //node.before: to add before the div or node.//
+// div.before(newBtn);
+
+// //node.after: too add after the node and div.//
+// div.after(newBtn); -->
+
+<div class="box" id="first">
+    <p>hello</p>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+    </ul>
+</div><br><br>
+
+<button id="append">Append</button>
+<button id="prepend">Prepend</button>
+<button id="after">After</button>
+<button id="before">Before</button>
+
+<script>
+    $(document).ready(function(){
+
+    $("#append").click(function(){
+      $("#first").append("<h2>Welcome to class </h2>")
+    }) //this is used to append after a div 
+
+    $("#prepend").click(function(){
+      $("#first").prepend("<h2>Welcome to class </h2>")
+    })
+
+    $("#after").click(function(){
+      $("#first").after("<h2>Welcome to class </h2>")
+    })
+
+    $("#append").click(function(){
+      $("#first").append("<h2>Welcome to class </h2>")
+    })
+
+
+
+    })
+</script>
+
+
+</body>
+</html>
