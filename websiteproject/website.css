@@ -1,0 +1,475 @@
+/* Navbar items */
+.navitems {
+    font-size: 28px;
+    font-family: 'Playfair Display', serif;
+    color:white;
+  }
+  
+.nav-item:hover {
+    text-decoration: underline;
+    color: white
+   
+  }
+
+  .navbar{
+    background: transparent; 
+    position:fixed; 
+    top: 0; 
+    left: 0;
+     width: 100%; 
+     z-index: 1000;
+  }
+  
+  /* About text section */
+.about{
+    font-size: 20px;
+    font-family:'Lato', sans-serif;
+    font-weight: bold;
+    color: #CCCCCC;
+    padding: 2rem;  
+    min-height: 150vh;
+  }
+  
+h1{
+    font-family:'Playfair Display', serif; ;
+    font-size:50px;
+    font-weight: bold;
+    
+}
+
+h1:hover{
+    text-decoration: underline;
+}
+.info{
+    font-family:'Lato', sans-serif;
+}
+.btn{
+    font-family: 'Playfair Display', serif;
+}
+.cafe{
+  height:40%;
+  width:70%;
+  border-radius: 5%;
+  box-shadow: 2px 2px 2px 2px black;
+  transition: transform 0.4s ease;
+}
+.cafe:hover{
+  transform: scale(1.1);
+  
+}
+.chef{
+  height:90%;
+  width:70%;
+  transition: transform 0.3s ease;
+  box-shadow: 2px 2px 2px 2px black;
+}
+
+.chef:hover{
+  transform: scale(1.1);
+}
+
+/* New image section */
+/* Wave positioned at top of image */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  margin-top: -25px; /* Adjust this negative value as needed */
+}
+
+.blurred-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  filter: blur(0px);
+  transform: scale(1.02);
+  transform-origin: center;
+  margin: 0;
+  padding: 0;
+}
+
+.image-wave-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  pointer-events: none;
+  margin-top: -20px; /* Small adjustment */
+}
+
+.image-wave-top svg {
+  display: block;
+  width: 100%;
+  height: 120px; /* Reduce this value to make wave smaller */
+  margin: 0;
+  padding: 0;
+} 
+
+/* For mobile */
+@media (max-width: 768px) {
+  .image-wave-top svg {
+    height: 50vh;
+  }
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .image-wave-top svg {
+    height: 60px; /* Smaller wave on mobile */
+  }
+}
+/* MENU CSS */
+.menudish{
+  height: 350px;
+  object-fit: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
+  transition: transform 0.4s ease;
+}
+
+
+.menudish:hover{
+  transform: scale(1.1);
+}
+
+
+.menu{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 0.5rem; 
+  overflow: hidden; 
+}
+
+.menu:hover{
+    transform: scale(1.1);
+}
+
+
+h4{
+    font-family: 'Playfair Display', serif;;
+    font-size: 2.0rem;
+    margin-top: 10px;
+    color: #5c4033;
+    text-align: center;
+}
+
+/* .slide-left {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideInLeft 1s ease-out forwards;
+  animation-delay: 0.1s;
+} */
+
+/* Slide-in animation keyframes */
+/* @keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideInRight 1s ease-out forwards;
+  animation-delay: 0.1s;
+}
+
+@keyframes slideInRight {
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+} */
+
+/* OUR SPACES AND SECTIONS CSS */
+.gallery{
+    height:60vh;
+    width:50vw;
+}
+
+
+.pinterest-gallery{
+    transition: transform 0.4s ease;
+    cursor: pointer;
+  }
+
+.pinterest-gallery:hover{
+    transform: scale(1.1);
+  }
+
+  /* LOCATION SECTION CSS */
+  .map-wrapper {
+    width: 100%;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+  }
+
+  /* Optional: Ensure body/html have no extra margin */
+  body, html {
+    margin: 0;
+    padding: 0;
+  }
+/* === Reservation Modal Styling === */
+
+.modal-content {
+    background: linear-gradient(black, grey);
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+    width: 40vw;
+    max-width: 100%;
+    margin: auto;
+  }
+  
+ /* Custom Fade Animation */
+@keyframes fadeSlideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply when modal is shown */
+.custom-fade-modal.show .modal-dialog {
+    animation: fadeSlideUp 1.1s ease forwards;
+  }
+  
+  
+  /* Title Styling */
+.modal-title {
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.79rem;
+    letter-spacing: 1px;
+    color: #fff;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  /* Form Inputs */
+.modal-content .form-control {
+    background-color: #1f1f1f;
+    border: 1px solid #444;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+  }
+  
+.modal-content .form-control::placeholder {
+    color: #aaa;
+  }
+  
+.modal-content .form-label {
+    color: #ddd;
+    font-weight: 500;
+  }
+  
+  /* Footer Buttons */
+.modal-footer {
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+.modal-footer .btn-primary,
+.modal-footer .btn-secondary {
+    background-color: black;
+    border: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+    width: 7vw;
+    min-width: 100px;
+    padding: 0.5rem 1rem;
+    color: #fff;
+  }
+  
+.modal-footer .btn-primary:hover,
+.modal-footer .btn-secondary:hover {
+    transform: scale(1.1);
+  }
+  
+/* === Responsive Enhancements === */
+  @media (max-width: 768px) {
+.modal-content {
+      width: 90vw;
+      padding: 1rem;
+    }
+  
+.modal-title {
+      font-size: 1.5rem;
+    }
+  
+.modal-footer .btn-primary,
+.modal-footer .btn-secondary {
+      width: 100%;
+      font-size: 1rem;
+    }
+  
+.modal-footer {
+      flex-direction: column;
+    }
+  
+.modal-content .form-control {
+      font-size: 0.95rem;
+      padding: 0.6rem 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .modal-title {
+      font-size: 1.3rem;
+    }
+  
+.modal-content .form-control {
+      font-size: 0.9rem;
+      padding: 0.5rem 0.8rem;
+    }
+  }
+
+  /* FOOTER SECTION CSS */
+  
+.footer-section {
+    color: #eee;
+    font-family: 'Lato', sans-serif;
+    height:auto;
+    background: linear-gradient(to right, grey, black);
+  }
+  
+.footer-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+.footer-desc {
+    font-size: 0.95rem;
+    color: #ccc;
+    line-height: 1.6;
+  }
+  
+.footer-heading {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+.footer-link {
+    display: block;
+    color: #aaa;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+.footer-link:hover {
+    color: #fff;
+  }
+  
+.social-icon {
+    font-size: 1.25rem;
+    color: #aaa;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+.social-icon:hover {
+    color: #fff;
+    transform: scale(1.2);
+  }
+  
+.footer-bottom {
+    font-size: 0.85rem;
+    color: #888;
+  }
+    
+/* OUR MENU PAGE CSS */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Removes unnecessary overflow from container */
+.container {
+  overflow: hidden;
+}
+.btnhome{
+  height:15%;
+  width:10%;
+  border-radius:10px;
+}
+.btnhome:hover{
+  color:blue;
+}
+
+.italian, .indian, .mexican, .east, .bev {
+  height: 40vh;
+  width: 40vw;
+  transition: transform 0.4s ease;
+  object-fit: cover; 
+}
+
+.italian:hover, .indian:hover, .mexican:hover, .east:hover, .bev:hover {
+  transform: scale(1.1);
+}
+
+.nav-link{
+  font-size:1.5rem;
+  font-family: 'Playfair Display', serif;
+}
+p{
+  font-family: 'Lato', sans-serif;
+  font-size:1.1rem;
+  font-weight: bold;
+}
+
+.main{
+  margin-top: 6.0rem;
+}
+
+/* When screen width is less than 768px (mobile devices) */
+@media (max-width: 768px) {
+  .italian, .indian, .mexican, .east, .bev {
+    height: auto; 
+    width: 100%;  
+    object-fit: contain; 
+  }
+
+.nav-tabs {
+    font-size: 0.9rem; /* Slightly smaller font for mobile screens */
+  }
+/* Ensure the columns stack vertically on smaller screens */
+  .tab-content .row {
+    display: block;
+  }
+  .text-center {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .italian, .indian, .mexican, .east, .bev {
+    height: 35vh; 
+    width: 45vw; 
+  }
+}
+

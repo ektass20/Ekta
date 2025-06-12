@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Mizlala</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
+      background-color: #f8f4ef;
+      color: #1a1a1a;
+    }
+    .hero {
+      background-image: url(restaurent.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    p{
+        font-size:1.3rem;
+    }
+    .values-icon {
+      font-size: 2.5rem;
+      margin-right: 10px;
+    }
+    .founder-img {
+      border-radius:50%;
+      width: 100%;
+      object-fit: cover;
+      max-height: 500px;
+      transition:transform 0.3s ease;
+    }
+    .bts{
+        max-height:280px;
+        width:100%;
+        transition: transform 0.3s ease;
+    }
+
+    .kitchen{
+        transition: transform 0.3s ease;
+    }
+
+    .bts:hover, .kitchen:hover, .founder-img:hover
+    {
+        transform: scale(1.1);
+    }
+/* FOOTER SECTION */
+    .modal-footer {
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+.modal-footer .btn-primary,
+.modal-footer .btn-secondary {
+    background-color: black;
+    border: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+    width: 7vw;
+    min-width: 100px;
+    padding: 0.5rem 1rem;
+    color: #fff;
+  }
+  
+.modal-footer .btn-primary:hover,
+.modal-footer .btn-secondary:hover {
+    transform: scale(1.1);
+  }
+  
+/* === Responsive Enhancements === */
+  @media (max-width: 768px) {
+.modal-content {
+      width: 90vw;
+      padding: 1rem;
+    }
+  
+.modal-title {
+      font-size: 1.5rem;
+    }
+  
+.modal-footer .btn-primary,
+.modal-footer .btn-secondary {
+      width: 100%;
+      font-size: 1rem;
+    }
+  
+.modal-footer {
+      flex-direction: column;
+    }
+  
+.modal-content .form-control {
+      font-size: 0.95rem;
+      padding: 0.6rem 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .modal-title {
+      font-size: 1.3rem;
+    }
+  
+.modal-content .form-control {
+      font-size: 0.9rem;
+      padding: 0.5rem 0.8rem;
+    }
+  }
+
+  /* FOOTER SECTION CSS */
+  
+.footer-section {
+    background: linear-gradient(to top,#304146,#6f9196);
+    color: #eee;
+    font-family: 'Lato', sans-serif;
+    height:auto;
+  }
+  
+.footer-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+.footer-desc {
+    font-size: 0.95rem;
+    color: #ccc;
+    line-height: 1.6;
+  }
+  
+.footer-heading {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+.footer-link {
+    display: block;
+    color: #aaa;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+.footer-link:hover {
+    color: #fff;
+  }
+  
+.social-icon {
+    font-size: 1.25rem;
+    color: #aaa;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+.social-icon:hover {
+    color: #fff;
+    transform: scale(1.2);
+  }
+  
+.footer-bottom {
+    font-size: 0.85rem;
+    color: #888;
+  }
+    
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <div class="hero text-center">
+    <h1>More Than a Meal — A Celebration of Culture & Community</h1>
+  </div>
+
+  <div class="container py-5">
+    <!-- Our Story -->
+    <div class="mb-5">
+      <h2 class="section-title text-center">Our Story</h2>
+      <p>Mizlala began in our family kitchen with a dream to bring people together over good food. We believe in blending tradition with innovation — infusing global flavors into comforting dishes that spark joy. Every plate we serve tells a story of passion, heritage, and creativity.</p>
+    </div>
+
+    <!-- Meet the Founder -->
+    <div class="row mb-5 align-items-center">
+      <div class="col-md-5">
+        <img src="newchef.jpg" alt="Founder" class="founder-img">
+      </div>
+      <div class="col-md-7"><br><br>
+        <h2 class="section-title">Meet the Chef</h2>
+        <p>Chef Danny Elmaleh grew up in a Mediterranean household where food was a love language. After years of travel and culinary exploration, he returned home to start Mizlala — a space to share bold flavors and soulful stories through cooking. His signature touch? A pinch of nostalgia in every bite.</p>
+      </div>
+    </div>
+    <!-- Gallery Section -->
+<div class="mb-5">
+    <h2 class="section-title text-center">Behind the Scenes</h2>
+    <p class="text-center">From the kitchen to the dining room — here’s a glimpse of the people who make Mizlala special.</p><br><br>
+    <div class="row g-3">
+      <div class="col-6 col-md-4">
+        <img src="chefinaction.jpg" class="img-fluid rounded shadow-sm kitchen" alt="Chef in action">
+      </div>
+      <div class="col-6 col-md-4">
+        <img src="kitchenteam.jpg" class="img-fluid rounded shadow-sm kitchen" alt="Guests enjoying meal">
+      </div>
+      <div class="col-6 col-md-4">
+        <img src="chefsmiling.jpg" class="img-fluid rounded shadow-sm kitchen" alt="Chef smiling">
+      </div>
+      <div class="col-6 col-md-4">
+        <img src="familyatrestaurent.jpg" class="img-fluid rounded shadow-sm kitchen" alt="Family at restaurant">
+      </div>
+      <div class="col-6 col-md-4">
+        <img src="guestenjoyingmeal.jpg" class="img-fluid rounded shadow-sm kitchen" alt="Kitchen team">
+      </div>
+      <div class="col-6 col-md-4">
+        <img src="cookin.jpg" class="img-fluid rounded shadow-sm bts" alt="Cooking in progress">
+      </div>
+    </div>
+  </div>
+  
+
+    <!-- Philosophy / Values -->
+    <div class="mb-5">
+      <h2 class="section-title text-center">Our Values</h2>
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <span class="values-icon">🌿</span> Fresh Ingredients
+        </div>
+        <div class="col-md-3 mb-3">
+          <span class="values-icon">🌍</span> Global Inspiration
+        </div>
+        <div class="col-md-3 mb-3">
+          <span class="values-icon">👨‍👩‍👧‍👦</span> Family Feel
+        </div>
+        <div class="col-md-3 mb-3">
+          <span class="values-icon">❤️</span> Food With Soul
+        </div>
+      </div>
+    </div>
+
+    <!-- Behind the Name -->
+    <div class="mb-5">
+      <h2 class="section-title text-center fw-bold">What Does "Mizlala" Mean?</h2>
+      <p>"Mizlala" is a Hebrew slang word that loosely translates to “messy eating” — the kind of joyful, relaxed, hands-on experience you have when food is shared with love and no rules. To us, it means eating with abandon, laughing with your mouth full, and feeling at home.It's derived from the Hebrew root "זלל" which means "to gobble" or "to devour", so it has a fun, slightly cheeky vibe — like a place where you go to seriously enjoy your food, not just nibble politely. 😄</p>
+    </div><br>
+
+    <!-- Testimonials -->
+
+    <div class=" container mb-5">
+    <div class="row gx-5">
+    <div class="col-md-8">
+    <h2 class="section-title">What Our Guests Say:</h2>
+        <blockquote class="blockquote">
+          <p class="mb-0">“Hands down the best tacos I’ve had in my life.<br>And I’ve had a lot of tacos.”</p><br>
+          <footer class="blockquote-footer">Trevor D.</footer>
+        </blockquote>
+        <blockquote class="blockquote">
+          <p class="mb-0">““If I could give it 6 stars, I would.”</p><br>
+          <footer class="blockquote-footer">Rita S.</footer>
+        </blockquote></div>
+      
+    <div class="col-md-4">
+    <h2 class="section-title">What Our Guests Say:</h2>
+        <blockquote class="blockquote">
+            <p class="mb-0">“Feels like home with every bite.”</p><br>
+            <footer class="blockquote-footer">Amira L.</footer>
+        </blockquote>
+        <blockquote class="blockquote">
+            <p class="mb-0">“The lasagna made me cry. In a good way.”</p><br>
+            <footer class="blockquote-footer">Jake R.</footer>
+        </blockquote></div>
+    
+    </div>
+    </div>
+
+
+    <!-- Call to Action -->
+    <div class="text-center">
+      <h2>Come share a plate with us.</h2>
+      <a href="web.html#bookatable" class="btn btn-warning mt-3">Make a Reservation</a>
+    </div>
+  </div>
+
+
+<!-- Footer section -->
+  <footer class="footer-section text-light" style="background: linear-gradient(gray,black);">
+  <div class="container py-5">
+    <div class="row justify-content-between">
+
+      <!-- Brand & About -->
+      <div class="col-md-4 mb-4">
+        <h3 class="footer-brand text-white">Mizlala</h3>
+        <p class="footer-desc text-white">Where flavors meet stories. Join us for an unforgettable culinary experience in the heart of the city.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-2 col-6 mb-4">
+        <h5 class="footer-heading fst">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#menu" class="footer-link text-white">Menu</a></li>
+          <li><a href="#bookatable" class="footer-link text-white">Reservations</a></li>
+          <li><a href="mizlalaaboutus.html" class="footer-link text-white">Our Story</a></li>
+          <li><a href="#contact" class="footer-link text-white">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+
+      <div class="col-md-4 mb-4">
+        <h5>Mizlala – West Adams</h5>
+        <p><i class= "footer-heading fst-italic"fas fa-map-marker-alt me-2></i>5400 W Adams Blvd, Los Angeles, CA 90016</p>
+        <p><i class="fas fa-phone-alt me-2"></i>(323) 433-7137</p>
+        <p><i class="fas fa-clock me-2"></i>11am – 10pm Daily</p>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5 class="footer-heading">Mizlala – Sycamore</h5>
+        <p><i class="fas fa-map-marker-alt me-2"></i>7007 Romaine St Ste 103, Los Angeles, CA 90038</p>
+        <p><i class="fas fa-phone-alt me-2"></i>(323) 347-6292</p>
+        <p><i class="fas fa-clock me-2"></i>11am – 9pm Daily</p>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <p><i class="fas fa-map-marker-alt me-2"></i>4515 Sepulveda Blvd, Sherman Oaks, CA 91403</p>
+        <p><i class="fas fa-phone-alt me-2"></i>(818) 783-6698</p>
+        <p><i class="fas fa-clock me-2"></i>Mon–Sat: 11am–10pm<br>Sun: 11am–9pm</p>
+      </div>
+
+    </div>
+
+
+      <!-- Socials -->
+      <div class="col-md-3 mb-4">
+        <h5 class="footer-heading">Follow Us</h5>
+        <div class="d-flex gap-3">
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="text-center mt-4 pt-3 border-top footer-bottom text-white">
+      &copy; 2025 Mizlala. Crafted with passion 💛
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

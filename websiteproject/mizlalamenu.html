@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="website.css">
+  <style>
+    body{
+    margin: 0;
+    padding: 0;
+    }
+    
+    button{
+      transition: transform 0.3s ease;
+    }
+    button:hover{
+      transform: scale(1.1);
+    }
+    
+  </style>
+</head>
+<body>
+    <section id="menu" class="py-3" style="background-color: white;">
+        <div class="container">
+          <h1 class="text-center mb-5  fst-italic fw-bold mt-3">Our Menu</h1>
+      
+          <!-- Tabs Nav -->
+          <ul class="nav nav-tabs justify-content-center mb-5 main" id="menuTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active fst-italic fw-bold" id="italian-tab" data-bs-toggle="tab" data-bs-target="#italian" type="button" role="tab">Italian🇮🇹</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link fst-italic fw-bold" id="indian-tab" data-bs-toggle="tab" data-bs-target="#indian" type="button" role="tab">Indian🇮🇳</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link fst-italic fw-bold" id="mexican-tab" data-bs-toggle="tab" data-bs-target="#mexican" type="button" role="tab">Mexican🇲🇽</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link fst-italic fw-bold" id="asian-tab" data-bs-toggle="tab" data-bs-target="#asian" type="button" role="tab">East Asian🇰🇷🇯🇵🇨🇳</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link fst-italic fw-bold" id="Beverages-tab" data-bs-toggle="tab" data-bs-target="#beverages" type="button" role="tab">Beverages🍷</button>
+              </li>
+            
+          </ul>
+      
+          <!-- Tabs Content -->
+          <div class="tab-content" id="menuTabsContent">
+
+            <!-- Italian -->
+            <div class="tab-pane fade show active" id="italian" role="tabpanel">
+              <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="pizza.jpg" class="img-fluid rounded mb-2 italian" alt="Margherita Pizza">
+                  <p class="text-center">Margherita Pizza</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="lasagna.jpg" class="img-fluid rounded mb-2 italian" alt="Lasagna">
+                  <p class="text-center">Lasagna</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="spaghetti.jpg" class="img-fluid rounded mb-2 italian" alt="Fettuccine Alfredo">
+                  <p class="text-center">spaghetti</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="caprese salad.jpg" class="img-fluid rounded mb-2 italian" alt="Caprese Salad">
+                  <p class="text-center">Caprese Salad</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="risotto.jpg" class="img-fluid rounded mb-2 italian" alt="Caprese Salad">
+                  <p class="text-center">Risotto</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="alfreed.jpg" class="img-fluid rounded mb-2 italian" alt="Caprese Salad">
+                  <p class="text-center"> Fettuccine Alfredo</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="gnochi.jpg" class="img-fluid rounded mb-2 italian" alt="Caprese Salad">
+                  <p class="text-center"> Gnocchi</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="frittata.jpg" class="img-fluid rounded mb-2 italian" alt="Caprese Salad">
+                  <p class="text-center"> Frittata</p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Indian -->
+            <div class="tab-pane fade" id="indian" role="tabpanel">
+              <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="butter chicken.jpg" class="img-fluid rounded mb-2 indian" alt="Butter Chicken">
+                  <p class="text-center">Butter Chicken</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="panner tikka.jpg" class="img-fluid rounded mb-2 indian" alt="Paneer Tikka">
+                  <p class="text-center">Paneer Tikka</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="biryani.jpg" class="img-fluid rounded mb-2 indian" alt="Biryani">
+                  <p class="text-center">Biryani</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="naan.jpg" class="img-fluid rounded mb-2 indian" alt="Naan">
+                  <p class="text-center"> Garlic Naan</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="tandoori .jpg" class="img-fluid rounded mb-2 indian" alt="Naan">
+                  <p class="text-center">Tandoori Chicken</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="samosa.jpg" class="img-fluid rounded mb-2 indian" alt="Naan">
+                  <p class="text-center">Samosa</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="dosa.jpg" class="img-fluid rounded mb-2 indian" alt="Naan">
+                  <p class="text-center">Masala Dosa</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="korma.jpg" class="img-fluid rounded mb-2 indian" alt="Naan">
+                  <p class="text-center">Chicken Korma</p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Mexican -->
+            <div class="tab-pane fade" id="mexican" role="tabpanel">
+              <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="tacos.jpg" class="img-fluid rounded mb-2 mexican" alt="Tacos">
+                  <p class="text-center">Tacos</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="guacomola.jpg" class="img-fluid rounded mb-2 mexican" alt="Guacamole">
+                  <p class="text-center">Guacamole</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="enchidillas.jpg" class="img-fluid rounded mb-2 mexican" alt="Enchiladas">
+                  <p class="text-center">Enchiladas</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="quasidillas.jpg" class="img-fluid rounded mb-2 mexican" alt="Quesadillas">
+                  <p class="text-center">Quesadillas</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="burritto.jpg" class="img-fluid rounded mb-2 mexican" alt="Quesadillas">
+                  <p class="text-center">burritos</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="tamales.jpg" class="img-fluid rounded mb-2 mexican" alt="Quesadillas">
+                  <p class="text-center">Tamales</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="chiles en nogada.jpg" class="img-fluid rounded mb-2 mexican" alt="Quesadillas">
+                  <p class="text-center">Chiles en Nogada</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="pozolo.jpg" class="img-fluid rounded mb-2 mexican" alt="Quesadillas">
+                  <p class="text-center">Pozolo</p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- East Asian -->
+            <div class="tab-pane fade" id="asian" role="tabpanel">
+              <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="sushi.jpg" class="img-fluid rounded mb-2 east" alt="Sushi">
+                  <p class="text-center">Sushi</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="ramen.jpg" class="img-fluid rounded mb-2 east" alt="Ramen">
+                  <p class="text-center">Ramen</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="chicken.jpg" class="img-fluid rounded mb-2 east" alt="Kung Pao Chicken">
+                  <p class="text-center">Kung Pao Chicken</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="tteokboki.jpg" class="img-fluid rounded mb-2 east" alt="Tteokbokki ">
+                  <p class="text-center">Tteokbokki</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="dimsum.jpg" class="img-fluid rounded mb-2 east" alt="Tteokbokki ">
+                  <p class="text-center">Dim Sum</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="yakitori.jpg" class="img-fluid rounded mb-2 east" alt="Tteokbokki ">
+                  <p class="text-center">Yakitori</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="japchae.jpg" class="img-fluid rounded mb-2 east" alt="Tteokbokki ">
+                  <p class="text-center">Japchae</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                  <img src="wagyubeef.jpg" class="img-fluid rounded mb-2 east" alt="Tteokbokki ">
+                  <p class="text-center">Wagyu Beef</p>
+                </div>
+              </div>
+            </div>
+          
+      
+          <!-- BEVERAGES -->
+          <div class="tab-pane fade" id="beverages" role="tabpanel">
+            <div class="row">
+              <div class="col-md-6 col-lg-3 mb-4">
+                <img src="redwine.jpg" class="img-fluid rounded mb-2 bev" alt="redwine">
+                <p class="text-center">Red wine</p>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-4">
+                <img src="lassi.jpg" class="img-fluid rounded mb-2 bev" alt="lassi">
+                <p class="text-center">Lassi</p>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-4">
+                <img src="mocktai;s.jpg" class="img-fluid rounded mb-2 bev" alt="mocktails">
+                <p class="text-center">Mocktails</p>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-4">
+                <img src="soju.jpg" class="img-fluid rounded mb-2 bev" alt="soju">
+                <p class="text-center">Soju</p>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-4">
+                <img src="bubbletea.jpg" class="img-fluid rounded mb-2 bev" alt="soju">
+                <p class="text-center">Bubble Tea</p>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-4">
+                <img src="agua fresca.jpg" class="img-fluid rounded mb-2 bev" alt="soju">
+                <p class="text-center">Agua Fresca</p>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-4">
+                <img src="cha.jpg" class="img-fluid rounded mb-2 bev" alt="soju">
+                <p class="text-center">Yuji Cha</p>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-4">
+                <img src="matcha.jpg" class="img-fluid rounded mb-2 bev" alt="soju">
+                <p class="text-center">Matcha</p>
+              </div>
+
+          </div>
+          </div>
+        </div>
+        </div>
+
+<!-- FOOTER SECTION  -->
+  <footer class="footer-section text-light" style="background: linear-gradient(darkgrey,black);">
+  <div class="container py-5">
+    <div class="row justify-content-between">
+
+      <!-- Brand & About -->
+      <div class="col-md-4 mb-4">
+        <h3 class="footer-brand text-white">Mizlala</h3>
+        <p class="footer-desc text-white">Where flavors meet stories. Join us for an unforgettable culinary experience in the heart of the city.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-2 col-6 mb-4">
+        <h5 class="footer-heading fst">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#menu" class="footer-link text-white">Menu</a></li>
+          <li><a href="#bookatable" class="footer-link text-white">Reservations</a></li>
+          <li><a href="mizlalaaboutus.html" class="footer-link text-white">Our Story</a></li>
+          <li><a href="#contact" class="footer-link text-white">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+
+      <div class="col-md-4 mb-4">
+        <h5>Mizlala – West Adams</h5>
+        <p><i class= "fst-italicfas fa-map-marker-alt me-2"></i>5400 W Adams Blvd, Los Angeles, CA 90016</p>
+        <p><i class="fas fa-phone-alt me-2"></i>(323) 433-7137</p>
+        <p><i class="fas fa-clock me-2"></i>11am – 10pm Daily</p>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5 class="footer-heading">Mizlala – Sycamore</h5>
+        <p><i class="fas fa-map-marker-alt me-2 fst-italic"></i>7007 Romaine St Ste 103, Los Angeles, CA 90038</p>
+        <p><i class="fas fa-phone-alt me-2"></i>(323) 347-6292</p>
+        <p><i class="fas fa-clock me-2"></i>11am – 9pm Daily</p>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <p><i class="fas fa-map-marker-alt me-2 fst-italic"></i>4515 Sepulveda Blvd, Sherman Oaks, CA 91403</p>
+        <p><i class="fas fa-phone-alt me-2"></i>(818) 783-6698</p>
+        <p><i class="fas fa-clock me-2"></i>Mon–Sat: 11am–10pm<br>Sun: 11am–9pm</p>
+      </div>
+
+    </div>
+
+
+      <!-- Socials -->
+      <div class="col-md-3 mb-4">
+        <h5 class="footer-heading">Follow Us</h5>
+        <div class="d-flex gap-3">
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="text-center mt-4 pt-3 border-top footer-bottom text-white">
+      &copy; 2025 Mizlala. Crafted with passion 💛
+    </div>
+  </div>
+</footer>
+
+  </section>
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+</body>
+</html>

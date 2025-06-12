@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Mizlala</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: whitesmoke;
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* FOOTER SECTION */
+    .modal-footer {
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+.modal-footer .btn-primary,
+.modal-footer .btn-secondary {
+    background-color: black;
+    border: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+    width: 7vw;
+    min-width: 100px;
+    padding: 0.5rem 1rem;
+    color: #fff;
+  }
+  
+.modal-footer .btn-primary:hover,
+.modal-footer .btn-secondary:hover {
+    transform: scale(1.1);
+  }
+  
+/* === Responsive Enhancements === */
+  @media (max-width: 768px) {
+.modal-content {
+      width: 90vw;
+      padding: 1rem;
+    }
+  
+.modal-title {
+      font-size: 1.5rem;
+    }
+  
+.modal-footer .btn-primary,
+.modal-footer .btn-secondary {
+      width: 100%;
+      font-size: 1rem;
+    }
+  
+.modal-footer {
+      flex-direction: column;
+    }
+  
+.modal-content .form-control {
+      font-size: 0.95rem;
+      padding: 0.6rem 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .modal-title {
+      font-size: 1.3rem;
+    }
+  
+.modal-content .form-control {
+      font-size: 0.9rem;
+      padding: 0.5rem 0.8rem;
+    }
+  }
+
+  /* FOOTER SECTION CSS */
+  
+/* .footer-section {
+    background: linear-gradient(to left, grey,black);
+    color: #eee;
+    font-family: 'Lato', sans-serif;
+    height:auto;
+  }
+  
+.footer-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+.footer-desc {
+    font-size: 0.95rem;
+    color: #ccc;
+    line-height: 1.6;
+  }
+  
+.footer-heading {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+.footer-link {
+    display: block;
+    color: #aaa;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+.footer-link:hover {
+    color: #fff;
+  } */
+  
+.social-icon {
+    font-size: 1.25rem;
+    color: #aaa;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+.social-icon:hover {
+    color: #fff;
+    transform: scale(1.2);
+  }
+  
+.footer-bottom {
+    font-size: 0.85rem;
+    color: #888;
+  }
+    
+
+    .contact-section {
+      padding: 60px 0;
+    }
+
+    .contact-box {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0, 64, 128, 0.08);
+      padding: 40px;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      color: rgb(99, 93, 93);
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .info-box {
+      background-color:  rgb(237, 231, 231);
+      font-weight: bold;
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+    }
+
+    .info-box h5 {
+      color: #004080;
+    }
+
+    .info-box p {
+      margin-bottom: 8px;
+    }
+
+    .form-label {
+      color: #003366;
+      font-weight: 500;
+    }
+
+    .btn-blue {
+      background-color: rgb(180, 168, 168);
+      color: black;
+      border-radius: 8px;
+      padding: 10px 25px;
+    }
+
+    .btn-blue:hover {
+      background-color: grey;
+    }
+
+    .social-links a {
+      font-size: 1.8rem;
+      margin-right: 15px;
+      color: rgb(180, 168, 168);
+    }
+
+    .social-links a:hover {
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+<section class="contact-section">
+  <div class="container">
+
+    <h2 class="section-title mb-5 fst-italic fw-bold">Contact Us</h2>
+
+    <!-- Info Section -->
+    <div class="info-box">
+      <div class="row">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h5 class="fst-italic">Visit Us</h5>
+          <p><strong>Address:</strong>5400 West Adams BlVd, Los Angeles America, CA 9600</p>
+          <p><strong>Phone:</strong> +1 234 567 890</p>
+          <p><strong>Email:</strong> hello@mizlala.com</p>
+          <p><strong>Hours:</strong> Mon–Sun: 12pm – 10pm</p>
+        </div>
+        <div class="col-md-6">
+          <h5 class="fst-italic">Follow Us</h5>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          </div>
+          <p class="mt-2">Stay connected for latest dishes, events & updates!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-box">
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Your Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Your Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Your Message</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Ask about reservations, events, or our menu..."></textarea>
+        </div>
+        <center>
+        <button type="submit" class="btn btn-blue">Send Message</button>
+        </center>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer-section text-light" style="background:linear-gradient(darkgrey,black);">
+  <div class="container py-5">
+    <div class="row justify-content-between">
+
+      <!-- Brand & About -->
+      <div class="col-md-4 mb-4">
+        <h3 class="footer-brand text-white">Mizlala</h3>
+        <p class="footer-desc text-white">Where flavors meet stories. Join us for an unforgettable culinary experience in the heart of the city.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-2 col-6 mb-4">
+        <h5 class="footer-heading fst">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#menu" class="footer-link text-white">Menu</a></li>
+          <li><a href="#bookatable" class="footer-link text-white">Reservations</a></li>
+          <li><a href="mizlalaaboutus.html" class="footer-link text-white">Our Story</a></li>
+          <li><a href="#contact" class="footer-link text-white">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+
+      <div class="col-md-4 mb-4">
+        <h5>Mizlala – West Adams</h5>
+        <p><i class= "footer-heading fst-italic"fas fa-map-marker-alt me-2></i>5400 W Adams Blvd, Los Angeles, CA 90016</p>
+        <p><i class="fas fa-phone-alt me-2"></i>(323) 433-7137</p>
+        <p><i class="fas fa-clock me-2"></i>11am – 10pm Daily</p>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <h5 class="footer-heading">Mizlala – Sycamore</h5>
+        <p><i class="fas fa-map-marker-alt me-2"></i>7007 Romaine St Ste 103, Los Angeles, CA 90038</p>
+        <p><i class="fas fa-phone-alt me-2"></i>(323) 347-6292</p>
+        <p><i class="fas fa-clock me-2"></i>11am – 9pm Daily</p>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <p><i class="fas fa-map-marker-alt me-2"></i>4515 Sepulveda Blvd, Sherman Oaks, CA 91403</p>
+        <p><i class="fas fa-phone-alt me-2"></i>(818) 783-6698</p>
+        <p><i class="fas fa-clock me-2"></i>Mon–Sat: 11am–10pm<br>Sun: 11am–9pm</p>
+      </div>
+
+    </div>
+
+
+      <!-- Socials -->
+      <div class="col-md-3 mb-4">
+        <h5 class="footer-heading">Follow Us</h5>
+        <div class="d-flex gap-3">
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="text-center mt-4 pt-3 border-top footer-bottom text-white">
+      &copy; 2025 Mizlala. Crafted with passion 💛
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
